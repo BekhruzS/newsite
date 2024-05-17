@@ -138,29 +138,7 @@
                   <input type="tel" name="phone" class="form-control" value="{{ user.phone }}">
                 </div>
               </div>
-            
-              <div class="mb-3">
-                <label class="form-label">Profile picture</label>
-                
-                <div class="d-flex align-items-center">
-                  <div class="position-relative me-3">
-                    
-                    {% if user.avatar %}
-                    <div class="avatar avatar-xl">
-                      <img class="avatar-img rounded-circle border border-white border-3 shadow" src="{{user.avatar.url}}" alt="">
-                    </div>
-                    {% else %}
-                    <div class="avatar avatar-xl">
-                      <img class="avatar-img rounded-circle border border-white border-3 shadow" src="data:image/jpeg;base64,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" alt="">
-                    </div>
-                    {% endif %}
-                  </div>
-                  <div class="avatar avatar-xl">
-                    <img src="" alt="">
-                  </div>
-                </div>
-
-              </div>
+               
             
               <div class="mb-3">
                 <label class="form-label">Job title</label>
