@@ -67,7 +67,7 @@ def profile(request, id):
 
     if request.method == "POST":
         full_name = request.POST.get('full_name')
-        avatar = request.FILES.get('avatar')
+        # avatar = request.FILES.get('avatar')
         phone = request.POST.get('phone')
         job = request.POST.get('job')
         bio = request.POST.get('bio')
@@ -75,7 +75,7 @@ def profile(request, id):
         user.phone = phone
         user.job = job
         user.bio = bio
-        user.avatar = avatar
+        # user.avatar = avatar
         user.save()
         message = True
 

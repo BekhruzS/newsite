@@ -69,15 +69,18 @@ MIDDLEWARE = [
 SITE_ID = 1
 
 CORS_ORIGIN_WITELIST = [
+    'https://newsite-zeta-five.vercel.app/'
 
 ]
 
 CSRF_TRUSTED_ORIGINS = [
+    'https://newsite-zeta-five.vercel.app/'
     
 
 ]
 
 CORS_ALLOWED_ORIGINS = [
+    'https://newsite-zeta-five.vercel.app/'
      
 ]
 
